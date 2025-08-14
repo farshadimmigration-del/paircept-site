@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paircept Match — Smarter matchmaking. Less swiping.</title>
+  <meta name="description" content="Paircept Match is an AI-guided matchmaking service that creates curated introductions with privacy by design.">
+  <link rel="preload" href="assets/paircept-logo.jpg" as="image">
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --fg: #eaeaea;
+      --muted: #b6b6b6;
+      --accent: #7b3bd6; /* purple vibe */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      display: grid;
+      place-items: center;
+    }
+    .wrap {
+      width: min(900px, 92vw);
+      padding: 32px 20px 24px;
+      text-align: center;
+    }
+    img.logo {
+      width: min(320px, 70vw);
+      height: auto;
+      display: block;
+      margin: 16px auto 12px;
+      filter: drop-shadow(0 4px 20px rgba(0,0,0,.45));
+      border-radius: 16px;
+    }
+    h1 {
+      margin: 8px 0 6px;
+      font-size: clamp(26px, 4.5vw, 42px);
+      letter-spacing: .2px;
+    }
+    p.tag { margin: 8px 0 18px; color: var(--muted); font-size: clamp(14px, 2.5vw, 18px);}
+    .cta {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 1px solid #3a3a3a;
+      background: linear-gradient(180deg, #191919, #121212);
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .08s ease, box-shadow .2s ease, border-color .2s;
+    }
+    .cta:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,.35); border-color: #444;}
+    .grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr;
+      margin: 22px auto 16px;
+    }
+    .card {
+      padding: 14px 14px;
+      border-radius: 14px;
+      border: 1px solid #282828;
+      background: #121212;
+      color: #d9d9d9;
+    }
+    footer {
+      margin-top: 28px;
+      color: #9a9a9a;
+      font-size: 13px;
+    }
+    a.legal { color: #bdbdbd; text-decoration: underline dotted; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="logo" src="assets/paircept-logo.jpg" alt="Paircept heart logo">
+    <h1>Smarter matchmaking. Less swiping.</h1>
+    <p class="tag">AI‑guided compatibility, curated introductions, privacy by design.</p>
+
+    <a class="cta" href="#" aria-disabled="true" title="Early access coming soon">Join early access (coming soon)</a>
+
+    <div class="grid" aria-hidden="true">
+      <div class="card">Explainable matches: “Why you two” and smart talk starters.</div>
+      <div class="card">Staged reveal & verification for safer intros.</div>
+      <div class="card">Learns over time with your feedback.</div>
+    </div>
+
+    <footer>
+      <div>PAIRCEPT MATCH<span style="font-variant: all-small-caps;">™</span> is a matchmaking platform powered by AI.</div>
+      <div>© 2025 Farshad Tehranchi. All rights reserved. · <a class="legal" href="mailto:hello@paircept.com">hello@paircept.com</a></div>
+    </footer>
+  </main>
+</body>
+</html>
