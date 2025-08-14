@@ -3,80 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Paircept Match — Smarter matchmaking. Less swiping.</title>
-  <meta name="description" content="Paircept Match is an AI-guided matchmaking service that creates curated introductions with privacy by design.">
+  <title>Paircept Match — Where AI Connects Hearts</title>
+  <meta name="description" content="Paircept Match — AI-guided matchmaking with curated introductions and privacy by design. Where AI Connects Hearts.">
   <style>
     :root{
-      --bg1:#0b0b0f;      /* deep charcoal */
-      --bg2:#141419;      /* slightly lighter */
-      --text:#e8e8ea;     /* light text */
-      --muted:#b5b5bb;    /* secondary text */
-      --card:#111118;     /* card surface */
-      --border:#2a2a33;   /* card border */
+      --bg1:#0b0b0f; --bg2:#141419; --text:#e8e8ea; --muted:#b5b5bb;
+      --card:#111118; --border:#2a2a33;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0;
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
       color:var(--text);
       background:
         radial-gradient(1200px 600px at 50% -200px, #1f1f27 0%, transparent 60%),
         linear-gradient(180deg,var(--bg1),var(--bg2));
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
+      display:flex; align-items:center; justify-content:center; padding:24px;
     }
     .wrap{
       width:min(900px,94vw);
       background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
-      border:1px solid var(--border);
-      border-radius:20px;
-      padding:32px 26px 26px;
-      text-align:center;
-      box-shadow:0 24px 80px rgba(0,0,0,.45);
-      backdrop-filter:blur(2px);
+      border:1px solid var(--border); border-radius:20px;
+      padding:32px 26px 26px; text-align:center;
+      box-shadow:0 24px 80px rgba(0,0,0,.45); backdrop-filter:blur(2px);
     }
     .logo{
-      width:min(260px,70vw);
-      height:auto;
-      border-radius:16px;
-      display:block;
-      margin:6px auto 14px;
-      box-shadow:0 18px 40px rgba(0,0,0,.5);
+      width:min(260px,70vw); height:auto; border-radius:16px; display:block;
+      margin:6px auto 10px; box-shadow:0 18px 40px rgba(0,0,0,.5);
     }
-    h1{
-      margin:8px 0 6px;
-      font-size:clamp(26px,4vw,40px);
-      letter-spacing:.2px;
+    h1{ margin:8px 0 6px; font-size:clamp(26px,4vw,40px); letter-spacing:.2px; }
+    .tag{
+      margin:6px 0 16px; font-size:clamp(16px,2.6vw,20px); font-weight:600;
     }
     .lead{
-      margin:8px auto 18px;
-      color:var(--muted);
-      font-size:clamp(14px,2.4vw,18px);
+      margin:8px auto 18px; color:var(--muted); font-size:clamp(14px,2.4vw,18px);
       max-width:64ch;
     }
     .cta{
-      display:inline-block;
-      padding:12px 18px;
-      border-radius:999px;
+      display:inline-block; padding:12px 18px; border-radius:999px;
       border:1px solid #3a3a45;
-      background:linear-gradient(180deg,#1a1a22,#121219);
-      color:var(--text);
-      text-decoration:none;
-      font-weight:600;
-      transition:transform .08s ease, box-shadow .2s ease, border-color .2s ease;
+      background:linear-gradient(180deg,#1a1a22,#121219); color:var(--text);
+      text-decoration:none; font-weight:700;
+      transition:transform .08s ease, box-shadow .2s ease, border-color .2s;
     }
-    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(0,0,0,.35);border-color:#474757}
-    footer{margin-top:22px;color:#a8a8b0;font-size:13px}
-    footer a{color:#dcdce2;text-decoration:underline}
+    .cta:hover{ transform:translateY(-1px); box-shadow:0 12px 28px rgba(0,0,0,.35); border-color:#474757 }
+    footer{ margin-top:22px; color:#a8a8b0; font-size:13px }
+    footer a{ color:#dcdce2; text-decoration:underline }
   </style>
 </head>
 <body>
   <main class="wrap" role="main">
     <img src="paircept-logo.jpg" alt="Paircept Logo" class="logo">
     <h1>Paircept Match<span style="font-variant:all-small-caps;">™</span></h1>
+    <div class="tag">Where AI Connects Hearts</div>
     <p class="lead">Smarter matchmaking. Less swiping.<br>AI-guided compatibility, curated introductions, privacy by design.</p>
     <a class="cta" href="mailto:hello@paircept.com?subject=Paircept%20Early%20Access">Join early access (email)</a>
     <footer>
